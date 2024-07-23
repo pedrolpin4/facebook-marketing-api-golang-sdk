@@ -181,6 +181,21 @@ type Insight struct {
 	Impressions                      uint64                 `json:"impressions,string"`
 	Reach                            float64                `json:"reach,string"`
 	Spend                            float64                `json:"spend,string"`
+	Cpc                              float64                `json:"cpc,string"`
+	Cpm                              float64                `json:"cpm,string"`
+	Cpp                              float64                `json:"cpp,string"`
+	Ctr                              float64                `json:"ctr,string"`
+	InlineLinkClickCtr               float64                `json:"inline_link_click_ctr,string"`
+	InlineLinkClicks                 uint64                 `json:"inline_link_clicks,string"`
+	MobileAppPurchaseRoas            float64                `json:"mobile_app_purchase_roas,string"`
+	OutboundClicks                   uint64                 `json:"outbound_clicks,string"`
+	OutboundClicksCtr                float64                `json:"outbound_clicks_ctr,string"`
+	PurchaseRoas                     float64                `json:"purchase_roas,string"`
+	Video10SecWatchedActions         ActionTypeValue        `json:"video_10_sec_watched_actions"`
+	VideoAvgPctWatchedActions        ActionTypeValue        `json:"video_avg_pct_watched_actions"`
+	WebsiteCtr                       float64                `json:"website_ctr,string"`
+	WebsitePurchaseRoas              float64                `json:"website_purchase_roas,string"`
+	CanvasAvgViewPercent             float64                `json:"canvas_avg_view_percent,string"`
 	VideoContinues2SecWatchedActions ActionTypeValue        `json:"video_continuous_2_sec_watched_actions"`
 	Video15SecWatchedActions         ActionTypeValue        `json:"video_15_sec_watched_actions"`
 	VideoThruplayWatchedActions      ActionTypeValue        `json:"video_thruplay_watched_actions"`
