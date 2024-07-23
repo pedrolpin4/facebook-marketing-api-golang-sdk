@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/justwatch/facebook-marketing-api-golang-sdk/fb"
+	"github.com/pedrolpin4/facebook-marketing-api-golang-sdk/fb"
 )
 
 const (
