@@ -168,6 +168,7 @@ type Insight struct {
 	AdID                             string                 `json:"ad_id"`
 	Objective                        string                 `json:"objective"`
 	AdsetName                        string                 `json:"adset_name"`
+	AdName                           string                 `json:"ad_name"`
 	Age                              string                 `json:"age"`
 	CampaignID                       string                 `json:"campaign_id"`
 	CampaignName                     string                 `json:"campaign_name"`
