@@ -181,6 +181,10 @@ type Insight struct {
 	Impressions                      uint64                 `json:"impressions,string"`
 	Reach                            float64                `json:"reach,string"`
 	Spend                            float64                `json:"spend,string"`
+	Cpc                              float64                `json:"cpc,string"`
+	Cpp                              float64                `json:"cpp,string"`
+	Cpm                              float64                `json:"cpm,string"`
+	Ctr                              float64                `json:"ctr,string"`
 	VideoContinues2SecWatchedActions ActionTypeValue        `json:"video_continuous_2_sec_watched_actions"`
 	Video15SecWatchedActions         ActionTypeValue        `json:"video_15_sec_watched_actions"`
 	VideoThruplayWatchedActions      ActionTypeValue        `json:"video_thruplay_watched_actions"`
