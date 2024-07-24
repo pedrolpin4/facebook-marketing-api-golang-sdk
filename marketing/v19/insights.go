@@ -162,40 +162,25 @@ func (ir *InsightsRequest) GenerateReport(ctx context.Context, c chan<- Insight)
 
 // Insight contains insight data for an facebook graph API object, broken down by the desired day.
 type Insight struct {
-	AccountID         string          `json:"account_id"`
-	Actions           ActionTypeValue `json:"actions"`
-	AdsetID           string          `json:"adset_id"`
-	AdID              string          `json:"ad_id"`
-	Objective         string          `json:"objective"`
-	AdsetName         string          `json:"adset_name"`
-	Age               string          `json:"age"`
-	CampaignID        string          `json:"campaign_id"`
-	CampaignName      string          `json:"campaign_name"`
-	PublisherPlatform string          `json:"publisher_platform"`
-	PlatformPosition  string          `json:"platform_position"`
-	Clicks            uint64          `json:"clicks,string"`
-	DateStart         string          `json:"date_start"`
-	DateStop          string          `json:"date_stop"`
-	Frequency         float64         `json:"frequency,string"`
-	Gender            string          `json:"gender"`
-	Impressions       uint64          `json:"impressions,string"`
-	Reach             float64         `json:"reach,string"`
-	Spend             float64         `json:"spend,string"`
-	Cpc               string          `json:"cpc,string"`
-	Cpm               string          `json:"cpm,string"`
-	// Cpp                              float64                `json:"cpp,string"`
-	// Ctr                              float64                `json:"ctr,string"`
-	// InlineLinkClickCtr               float64                `json:"inline_link_click_ctr,string"`
-	// InlineLinkClicks                 uint64                 `json:"inline_link_clicks,string"`
-	// MobileAppPurchaseRoas            float64                `json:"mobile_app_purchase_roas,string"`
-	// OutboundClicks                   uint64                 `json:"outbound_clicks,string"`
-	// OutboundClicksCtr                float64                `json:"outbound_clicks_ctr,string"`
-	// PurchaseRoas                     float64                `json:"purchase_roas,string"`
-	Video10SecWatchedActions         ActionTypeValue        `json:"video_10_sec_watched_actions"`
-	VideoAvgPctWatchedActions        ActionTypeValue        `json:"video_avg_pct_watched_actions"`
-	WebsiteCtr                       float64                `json:"website_ctr,string"`
-	WebsitePurchaseRoas              float64                `json:"website_purchase_roas,string"`
-	CanvasAvgViewPercent             float64                `json:"canvas_avg_view_percent,string"`
+	AccountID                        string                 `json:"account_id"`
+	Actions                          ActionTypeValue        `json:"actions"`
+	AdsetID                          string                 `json:"adset_id"`
+	AdID                             string                 `json:"ad_id"`
+	Objective                        string                 `json:"objective"`
+	AdsetName                        string                 `json:"adset_name"`
+	Age                              string                 `json:"age"`
+	CampaignID                       string                 `json:"campaign_id"`
+	CampaignName                     string                 `json:"campaign_name"`
+	PublisherPlatform                string                 `json:"publisher_platform"`
+	PlatformPosition                 string                 `json:"platform_position"`
+	Clicks                           uint64                 `json:"clicks,string"`
+	DateStart                        string                 `json:"date_start"`
+	DateStop                         string                 `json:"date_stop"`
+	Frequency                        float64                `json:"frequency,string"`
+	Gender                           string                 `json:"gender"`
+	Impressions                      uint64                 `json:"impressions,string"`
+	Reach                            float64                `json:"reach,string"`
+	Spend                            float64                `json:"spend,string"`
 	VideoContinues2SecWatchedActions ActionTypeValue        `json:"video_continuous_2_sec_watched_actions"`
 	Video15SecWatchedActions         ActionTypeValue        `json:"video_15_sec_watched_actions"`
 	VideoThruplayWatchedActions      ActionTypeValue        `json:"video_thruplay_watched_actions"`
