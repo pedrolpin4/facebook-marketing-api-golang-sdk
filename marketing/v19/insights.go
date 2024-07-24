@@ -187,6 +187,7 @@ type Insight struct {
 	Cpp                              float64                `json:"cpp,string"`
 	Cpm                              float64                `json:"cpm,string"`
 	Ctr                              float64                `json:"ctr,string"`
+	PurchaseRoas                     ActionTypeValue        `json:"purchase_roas"`
 	VideoContinues2SecWatchedActions ActionTypeValue        `json:"video_continuous_2_sec_watched_actions"`
 	Video15SecWatchedActions         ActionTypeValue        `json:"video_15_sec_watched_actions"`
 	VideoThruplayWatchedActions      ActionTypeValue        `json:"video_thruplay_watched_actions"`
