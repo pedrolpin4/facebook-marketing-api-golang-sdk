@@ -163,6 +163,7 @@ func (ir *InsightsRequest) GenerateReport(ctx context.Context, c chan<- Insight)
 // Insight contains insight data for an facebook graph API object, broken down by the desired day.
 type Insight struct {
 	AccountID                        string                 `json:"account_id"`
+	AccountName                      string                 `json:"account_name"`
 	Actions                          ActionTypeValue        `json:"actions"`
 	AdsetID                          string                 `json:"adset_id"`
 	AdID                             string                 `json:"ad_id"`
