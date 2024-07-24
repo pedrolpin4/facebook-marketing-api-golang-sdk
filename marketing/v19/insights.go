@@ -191,6 +191,10 @@ type Insight struct {
 	UniqueClicks                     uint64                 `json:"unique_clicks,string"`
 	UniqueInlineLinkClicks           uint64                 `json:"unique_inline_link_clicks,string"`
 	UniqueCtr                        float64                `json:"unique_ctr,string"`
+	OutboundClicks                   ActionTypeValue        `json:"outbound_clicks"`
+	UniqueOutboundClicks             ActionTypeValue        `json:"unique_outbound_clicks"`
+	OutboundClicksCtr                ActionTypeValue        `json:"outbound_clicks_ctr"`
+	UniqueOutboundClicksCtr          ActionTypeValue        `json:"unique_outbound_clicks_ctr"`
 	PurchaseRoas                     ActionTypeValue        `json:"purchase_roas"`
 	VideoContinues2SecWatchedActions ActionTypeValue        `json:"video_continuous_2_sec_watched_actions"`
 	Video15SecWatchedActions         ActionTypeValue        `json:"video_15_sec_watched_actions"`
