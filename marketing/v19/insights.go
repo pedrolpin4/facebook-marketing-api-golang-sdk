@@ -188,6 +188,7 @@ type Insight struct {
 	Cpp                              float64                `json:"cpp,string"`
 	Cpm                              float64                `json:"cpm,string"`
 	Ctr                              float64                `json:"ctr,string"`
+	InlineLinkClicks                 uint64                 `json:"inline_link_clicks,string"`
 	UniqueClicks                     uint64                 `json:"unique_clicks,string"`
 	UniqueInlineLinkClicks           uint64                 `json:"unique_inline_link_clicks,string"`
 	UniqueCtr                        float64                `json:"unique_ctr,string"`
@@ -207,6 +208,7 @@ type Insight struct {
 	VideoP75WatchedActions           ActionTypeValue        `json:"video_p75_watched_actions"`
 	VideoP95WatchedActions           ActionTypeValue        `json:"video_p95_watched_actions"`
 	VideoPlayActions                 ActionTypeValue        `json:"video_play_actions"`
+	WebsitePurchaseRoas              ActionTypeValue        `json:"website_purchase_roas"`
 	InteractiveComponentTap          []InteractiveComponent `json:"interactive_component_tap"`
 	DeviceType                       string                 `json:"impression_device"`
 	Region                           string                 `json:"region"`
